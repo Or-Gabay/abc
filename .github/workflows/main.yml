@@ -35,9 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
-      - uses: jfrog/setup-jfrog-cli@v1
+      - uses: jfrog/setup-jfrog-cli@v1.1.0
         env:
           JF_ARTIFACTORY_1: ${{ secrets.JF_ARTIFACTORY_SECRET_1 }}
-      - run: |
-          # Ping the server
-          jfrog rt ping
+      - run: jfrog --version
