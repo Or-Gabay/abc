@@ -36,4 +36,5 @@ jobs:
           echo test, and deploy your project.
           
       - uses: jfrog/setup-jfrog-cli@v1.1.0
-      - run: jfrog --version
+      - run: |
+          jfrog rt dpl --url ${{ secrets.ART }} --username ${{ secrets.ECO }} --password ${{ secrets.JF_ARTIFACTORY_SECRET_1 }} ecosysjfrog-docker-local-or.jfrog.io/hello-world1:latest docker-local-or
