@@ -37,4 +37,4 @@ jobs:
           
       - uses: jfrog/setup-jfrog-cli@v1.1.0
       - run: |
-          jfrog rt dpl --url ${{ secrets.ART }} --user ${{ secrets.ECO }} --password ${{ secrets.JF_ARTIFACTORY_SECRET_1 }} ecosysjfrog-docker-local-or.jfrog.io/hello-world1:latest docker-local-or
+          jfrog rt dpl --url=${{ secrets.ART }} --user=${{ secrets.ECO }} --password=${{ secrets.JF_ARTIFACTORY_SECRET_1 }} ecosysjfrog-docker-local-or.jfrog.io/hello-world1:latest docker-local-or
