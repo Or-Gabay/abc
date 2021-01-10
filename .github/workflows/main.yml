@@ -37,7 +37,7 @@ jobs:
       - name: SETUP JFROG
         uses: jfrog/setup-jfrog-cli@v1.1.0
         with:
-          version: 1.43.2
+            version: 1.39.4
         env:
          JF_ARTIFACTORY_1: ${{ secrets.ECO }}
 
