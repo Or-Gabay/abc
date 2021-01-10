@@ -43,4 +43,5 @@ jobs:
 
       - name: Docker Pull
         run: |
+          jfrog rt ping
           jfrog rt dpl --server-id eco ecosysjfrog-docker-local-or.jfrog.io/hello-world1:latest docker-local-or
