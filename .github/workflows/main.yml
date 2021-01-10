@@ -37,7 +37,7 @@ jobs:
       - name: SETUP JFROG
         uses: jfrog/setup-jfrog-cli@v1.1.0
         with:
-          version: 1.39.4
+          version: 1.43.1
       - name: rundocker  
         run: |
           jfrog rt dpl --url=${{ secrets.ART }} --user=${{ secrets.ECO }} --password=${{ secrets.JF_ARTIFACTORY_SECRET_1 }} ecosysjfrog-docker-local-or.jfrog.io/hello-world1:latest docker-local-or
