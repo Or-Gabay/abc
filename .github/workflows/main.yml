@@ -39,7 +39,7 @@ jobs:
         with:
           version: 1.43.2
         env:
-         eco: ${{ secrets.art }}
+         JF_ARTIFACTORY_1: ${{ secrets.art }}
 
       - name: Docker Pull
         run: |
