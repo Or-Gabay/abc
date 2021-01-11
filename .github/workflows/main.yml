@@ -38,5 +38,5 @@ jobs:
       - uses: jfrog/setup-jfrog-cli@v1
       - run: |
           # Ping the server
-          jfrog rt c eco --interactive=false ----enc-password=false	--url=${{ secrets.URL }} --user=${{ secrets.USER }} --password==${{ secrets.PASS }}
+          jfrog rt c eco --interactive=false --enc-password=false	--url=${{ secrets.URL }} --user=${{ secrets.USER }} --password==${{ secrets.PASS }}
           jfrog rt ping	
